@@ -18,7 +18,7 @@ export default function Home() {
       >
         WildHeart works directly with zookeepers and animal care professionals
         to help them provide enrichment, food, and habitat improvements. By
-        gifting physical resources, we're able to improve the quality of life of
+        gifting physical resources, we&apos;re able to improve the quality of life of
         animals in need.
       </SectionTitle>
 

@@ -42,12 +42,12 @@ const ContactForm = () => {
   return (
     <>
       <SectionTitle preTitle="Contact Us">
-        We're always looking for animals to help
+        We&apos;re always looking for animals to help
       </SectionTitle>
       <div className="max-w-lg mx-auto bg-white p-8 shadow-lg rounded-lg mt-10">
         {isSubmitted ? (
           <h2 className="text-2xl font-semibold text-center text-green-600">
-            Thank you for your message! We'll get back to you soon.
+            Thank you for your message! We&apos;ll get back to you soon.
           </h2>
         ) : (
           <form
