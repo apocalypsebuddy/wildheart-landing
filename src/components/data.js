@@ -9,52 +9,77 @@ import {
 
 import benefitOneImg from "../../public/img/benefit-one.png";
 import benefitTwoImg from "../../public/img/benefit-two.png";
+import rhinoToyBenefit from "../../public/img/rhinoToyBenefit.jpg";
+import Benefit1Zeb from "../../public/img/Benefit1Zeb.jpg";
+import tigerBenefit3 from "../../public/img/tigerBenefit3.jpg";
 
 const benefitOne = {
-  title: "Highlight your benefits",
-  desc: "You can use this space to highlight your first benefit or a feature of your product. It can also contain an image or Illustration like in the example along with some bullet points.",
-  image: benefitOneImg,
+  title: "Toys and enrichment",
+  desc: "Enrichment allows zoo animals to exhibit their natural behaviors, keeping them active and mentally stimulated",
+  image: rhinoToyBenefit,
   bullets: [
     {
-      title: "Understand your customers",
-      desc: "Then explain the first point breifly in one or two lines.",
+      title: "Indestructable toys",
+      desc: "We send durable purpose made toys that can stand up to tiger claws and hippo teeth, and the toughest of wild play",
       icon: <FaceSmileIcon />,
     },
     {
-      title: "Improve acquisition",
-      desc: "Here you can add the next benefit point.",
+      title: "Natural enrichment",
+      desc: "Novel scents, plants, and ethically sourced pelts let wildlife expand their sensory experiences, mimicking a variety of interactions in their natural habitats",
       icon: <ChartBarSquareIcon />,
     },
     {
-      title: "Drive customer retention",
-      desc: "This will be your last bullet point in this section.",
+      title: "Upcycled items",
+      desc: "WildHeart volunteers have used old firehose and other recycled materials to build toys, hammocks, and structures to climb on",
       icon: <CursorArrowRaysIcon />,
     },
   ],
 };
 
 const benefitTwo = {
-  title: "Offer more benefits here",
-  desc: "You can use this same layout with a flip image to highlight your rest of the benefits of your product. It can also contain an image or Illustration as above section along with some bullet points.",
-  image: benefitTwoImg,
+  title: "Food and supplements",
+  desc: "Proper diet and supplements mimic what animals would eat in the wild and ensure proper nutrition",
+  image: Benefit1Zeb,
   bullets: [
     {
-      title: "Mobile Responsive Template",
-      desc: "Nextly is designed as a mobile first responsive template.",
+      title: "Supplements and specialty nutrition",
+      desc: "WildHeart has provided veterinary zoo grade food to wildlife rescue facilities around the world that were struggling to afford healthy diets",
       icon: <DevicePhoneMobileIcon />,
     },
     {
-      title: "Powered by Next.js & TailwindCSS",
-      desc: "This template is powered by latest technologies and tools.",
+      title: "Emergency food assistance",
+      desc: "When sancturies in the path of hurricanes have lost power to their freezers, we've stepped in with refridgerated trucks and new food resources",
       icon: <AdjustmentsHorizontalIcon />,
     },
     {
-      title: "Dark & Light Mode",
-      desc: "Nextly comes with a zero-config light & dark mode. ",
+      title: "Food donation resources",
+      desc: "We have worked with local grocery markets to connect them with sanctuaries and deliver unused food that would otherwise be thrown out",
       icon: <SunIcon />,
     },
   ],
 };
 
+const benefitThree = {
+  title: "Habitats and enclosures",
+  desc: "Enclosures can be interactive and fun, while allowing zoo animals more furniture to play and relax on",
+  image: tigerBenefit3,
+  bullets: [
+    {
+      title: "Platforms, hammocks, and furniture",
+      desc: "WildHeart has built sturdy platforms and hammocks for big cats, wolves, and primates so they have more usable space",
+      icon: <DevicePhoneMobileIcon />,
+    },
+    {
+      title: "Improvements and renovations",
+      desc: "Small sanctuaries with a miniscule budget have received upgrades to make habitats safer and more comfortable for the animals",
+      icon: <AdjustmentsHorizontalIcon />,
+    },
+    {
+      title: "New and larger enclosures",
+      desc: "WildHeart has built new enclosures for rescued tigers in Thailand, and completed the largest captive wolf habitat in North America",
+      icon: <SunIcon />,
+    },
+  ],
+};
 
-export {benefitOne, benefitTwo};
+export { benefitOne, benefitTwo, benefitThree };

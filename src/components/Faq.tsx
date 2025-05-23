@@ -36,21 +36,21 @@ export const Faq = () => {
 
 const faqdata = [
   {
-    question: "Is this template completely free to use?",
-    answer: "Yes, this template is completely free to use.",
+    question: "How is aid distributed to zoos and sanctuaries?",
+    answer: "WildHeart was founded on the principal of directly helping animals in need. We do not typically provide monetary support. Instead, we work with zoo staff to provide support in ways that have a direct impact on the individual animals they work with.",
   },
   {
-    question: "Can I use it in a commercial project?",
-    answer: "Yes, this you can.",
+    question: "Do you only help animals at accredited non-profits?",
+    answer: "No! WildHeart's mission is to help animals wherever they live. While we prioritize aid for non-profit wildlife sanctuaries, we have helped animals across a variety of facilities.",
   },
   {
-    question: "What is your refund policy? ",
+    question: "Do you run a wildlife sanctuary? ",
     answer:
-      "If you're unhappy with your purchase for any reason, email us within 90 days and we'll refund you in full, no questions asked.",
+      "No. WildHeart is a support organization that helps zoos, sanctuaries, and wildlife parks with the animals in their care. ",
   },
   {
-    question: "Do you offer technical support? ",
+    question: "Do you rescue or rehabilate wildlife? ",
     answer:
-      "No, we don't offer technical support for free downloads. Please purchase a support plan to get 6 months of support.",
+      "No. While WildHeart may sometimes coordinate with wildlife rescue or rehab facilities, we do not have the ability to house or transport animals. ",
   },
 ];

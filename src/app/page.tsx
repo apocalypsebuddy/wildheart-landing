@@ -7,48 +7,49 @@ import { Testimonials } from "@/components/Testimonials";
 import { Faq } from "@/components/Faq";
 import { Cta } from "@/components/Cta";
 
-import { benefitOne, benefitTwo } from "@/components/data";
+import { benefitOne, benefitTwo, benefitThree } from "@/components/data";
 export default function Home() {
   return (
     <Container>
       <Hero />
       <SectionTitle
-        preTitle="Nextly Benefits"
-        title=" Why should you use this landing page"
+        preTitle="Our mission"
+        title="Enriching the lives of wild animals in zoos and santuaries"
       >
-        Nextly is a free landing page & marketing website template for startups
-        and indie projects. Its built with Next.js & TailwindCSS. And its
-        completely open-source.
+        WildHeart works directly with zookeepers and animal care professionals
+        to help them provide enrichment, food, and habitat improvements. By
+        gifting physical resources, we're able to improve the quality of life of
+        animals in need.
       </SectionTitle>
 
       <Benefits data={benefitOne} />
       <Benefits imgPos="right" data={benefitTwo} />
-
+      <Benefits data={benefitThree} />
       <SectionTitle
-        preTitle="Watch a video"
-        title="Learn how to fullfil your needs"
+        preTitle="How WildHeart helps animals"
+        title="One million animals living in captivity"
       >
-        This section is to highlight a promo or demo video of your product.
-        Analysts says a landing page with video has 3% more conversion rate. So,
-        don&apos;t forget to add one. Just like this.
+        There are over 250 AZA accredited zoos and more than 200 GFAS accredited
+        wildlife sanctuaries in the United States and around the world, plus
+        many more with independent or no accreditation. We help animals
+        directly, no matter where they live.
       </SectionTitle>
 
-      <Video videoId="fZ0D0cnR88E" />
+      {/* TODO: Upload video to youtube and put video here */}
+      {/* <Video videoId="fZ0D0cnR88E" /> */}
 
-      <SectionTitle
-        preTitle="Testimonials"
+      {/* TODO: Do I want a testimonial section?  */}
+      {/* <SectionTitle
+        preTitle="Working"
         title="Here's what our customers said"
       >
         Testimonials is a great way to increase the brand trust and awareness.
         Use this section to highlight your popular customers.
       </SectionTitle>
 
-      <Testimonials />
+      <Testimonials /> */}
 
-      <SectionTitle preTitle="FAQ" title="Frequently Asked Questions">
-        Answer your customers possible questions here, it will increase the
-        conversion rate as well as support or chat requests.
-      </SectionTitle>
+      <SectionTitle preTitle="FAQ" />
 
       <Faq />
       <Cta />
