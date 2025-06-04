@@ -2,7 +2,7 @@ import { Container } from "@/components/Container";
 import { Hero } from "@/components/Hero";
 import { SectionTitle } from "@/components/SectionTitle";
 import { Benefits } from "@/components/Benefits";
-import { Video } from "@/components/Video";
+// import { Video } from "@/components/Video";
 import { Testimonials } from "@/components/Testimonials";
 import { Faq } from "@/components/Faq";
 import { Cta } from "@/components/Cta";
@@ -14,7 +14,7 @@ export default function Home() {
       <Hero />
       <SectionTitle
         preTitle="Our mission"
-        title="Enriching the lives of wild animals in zoos and santuaries"
+        title="Enriching the lives of wild animals in zoos and sanctuaries"
       >
         WildHeart works directly with zookeepers and animal care professionals
         to help them provide enrichment, food, and habitat improvements. By
@@ -38,16 +38,13 @@ export default function Home() {
       {/* TODO: Upload video to youtube and put video here */}
       {/* <Video videoId="fZ0D0cnR88E" /> */}
 
-      {/* TODO: Do I want a testimonial section?  */}
-      {/* <SectionTitle
-        preTitle="Working"
-        title="Here's what our customers said"
+      <SectionTitle
+        preTitle="Animal Voices"
+        title="Testimonials"
       >
-        Testimonials is a great way to increase the brand trust and awareness.
-        Use this section to highlight your popular customers.
       </SectionTitle>
 
-      <Testimonials /> */}
+      <Testimonials />
 
       <SectionTitle preTitle="FAQ" />
 

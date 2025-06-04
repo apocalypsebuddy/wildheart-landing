@@ -4,7 +4,13 @@ import React from "react";
 import { Container } from "@/components/Container";
 
 export function Footer() {
-  const navigation = ["About", "Projects", "Gallery", "Contact"];
+  const navigation = [
+    "About",
+    // "Projects",
+    "Gallery",
+    "Contact",
+    "Donate",
+  ];
   const legal = ["Terms", "Privacy", "Legal"];
   return (
     <div className="relative">
@@ -61,7 +67,7 @@ export function Footer() {
               ))}
             </div>
           </div>
-          <div className="">
+          {/* <div className="">
             <div>Follow us</div>
             <div className="flex mt-5 space-x-5 text-gray-400 dark:text-gray-500">
               <a
@@ -81,7 +87,7 @@ export function Footer() {
                 <Instagram />
               </a>
             </div>
-          </div>
+          </div> */}
         </div>
       </Container>
       {/* Do not remove this */}

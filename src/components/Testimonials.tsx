@@ -1,10 +1,24 @@
-import Image from "next/image";
+// import Image from "next/image";
 import React from "react";
 import { Container } from "@/components/Container";
 
-import userOneImg from "../../public/img/user1.jpg";
-import userTwoImg from "../../public/img/user2.jpg";
-import userThreeImg from "../../public/img/user3.jpg";
+// TODO: Create a testimonials directory in public/img/ and add the following images:
+// - tiger-sestra.jpg: Close-up of a Siberian tiger
+// - peacock-ivy.jpg: Peacock with its feathers displayed
+// - otter-benson.jpg: River otter playing in water
+// - wolf-luna.jpg: Gray wolf in natural habitat
+// - gorilla-kibo.jpg: Western lowland gorilla
+// - macaw-rio.jpg: Colorful scarlet macaw
+
+// Using existing images as placeholders until proper animal images are added
+// import tigerImg from "../../public/img/user1.jpg"; // TODO: Replace with ../../public/img/testimonials/tiger-sestra.jpg
+// import peacockImg from "../../public/img/user2.jpg"; // TODO: Replace with ../../public/img/testimonials/peacock-ivy.jpg
+// import otterImg from "../../public/img/user3.jpg"; // TODO: Replace with ../../public/img/testimonials/otter-benson.jpg
+// import wolfImg from "../../public/img/user1.jpg"; // TODO: Replace with ../../public/img/testimonials/wolf-luna.jpg
+// import gorillaImg from "../../public/img/user2.jpg"; // TODO: Replace with ../../public/img/testimonials/gorilla-kibo.jpg
+// import parrotImg from "../../public/img/user3.jpg"; // TODO: Replace with ../../public/img/testimonials/macaw-rio.jpg
+
+// TODO: Once the animal images are added, update the Avatar component to use proper sizing and cropping for animal faces
 
 export const Testimonials = () => {
   return (
@@ -13,42 +27,39 @@ export const Testimonials = () => {
         <div className="lg:col-span-2 xl:col-auto">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-              Share a real <Mark>testimonial</Mark>
-              that hits some of your benefits from one of your popular customer.
+              &quot;Chuff chuffchuffuffff...&quot; 
             </p>
 
             <Avatar
-              image={userOneImg}
-              name="Sarah Steiner"
-              title="VP Sales at Google"
+              // image={tigerImg}
+              name="Sestra"
+              title="Siberian Tiger at Cat Tales Zoo"
             />
           </div>
         </div>
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-              Make sure you only pick the <Mark>right sentence</Mark>
-              to keep it short and simple.
+              &quot;Kikaww...kikAWWWWWWW!!!&quot;
             </p>
 
             <Avatar
-              image={userTwoImg}
-              name="Dylan Ambrose"
-              title="Lead marketer at Netflix"
+              // image={peacockImg}
+              name="Ivy"
+              title="Indian Peafowl at Cheyenne Mountain Zoo"
             />
           </div>
         </div>
         <div className="">
           <div className="flex flex-col justify-between w-full h-full bg-gray-100 px-14 rounded-2xl py-14 dark:bg-trueGray-800">
             <p className="text-2xl leading-normal ">
-              This is an <Mark>awesome</Mark> landing page template I&apos;ve
-              seen. I would use this for anything.
+              &quot;Chirrr, squeak, chirrrrrr!&quot;
             </p>
 
             <Avatar
-              image={userThreeImg}
-              name="Gabrielle Winn"
-              title="Co-founder of Acme Inc"
+              // image={otterImg}
+              name="Benson"
+              title="River Otter at Tanganyika Wildlife Park"
             />
           </div>
         </div>
@@ -58,7 +69,7 @@ export const Testimonials = () => {
 };
 
 interface AvatarProps {
-  image: any;
+  // image: any;
   name: string;
   title: string;
 }
@@ -66,7 +77,7 @@ interface AvatarProps {
 function Avatar(props: Readonly<AvatarProps>) {
   return (
     <div className="flex items-center mt-8 space-x-3">
-      <div className="flex-shrink-0 overflow-hidden rounded-full w-14 h-14">
+      {/* <div className="flex-shrink-0 overflow-hidden rounded-full w-14 h-14">
         <Image
           src={props.image}
           width="40"
@@ -74,7 +85,7 @@ function Avatar(props: Readonly<AvatarProps>) {
           alt="Avatar"
           placeholder="blur"
         />
-      </div>
+      </div> */}
       <div>
         <div className="text-lg font-medium">{props.name}</div>
         <div className="text-gray-600 dark:text-gray-400">{props.title}</div>
@@ -83,13 +94,14 @@ function Avatar(props: Readonly<AvatarProps>) {
   );
 }
 
-function Mark(props: { readonly children: React.ReactNode }) {
-  return (
-    <>
-      {" "}
-      <mark className="text-indigo-800 bg-indigo-100 rounded-md ring-indigo-100 ring-4 dark:ring-indigo-900 dark:bg-indigo-900 dark:text-indigo-200">
-        {props.children}
-      </mark>{" "}
-    </>
-  );
-}
+// Interesting little component that AI came up with to highlight the text
+// function Mark(props: { readonly children: React.ReactNode }) {
+//   return (
+//     <>
+//       {" "}
+//       <mark className="text-indigo-800 bg-indigo-100 rounded-md ring-indigo-100 ring-4 dark:ring-indigo-900 dark:bg-indigo-900 dark:text-indigo-200">
+//         {props.children}
+//       </mark>{" "}
+//     </>
+//   );
+// }

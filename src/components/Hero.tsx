@@ -27,14 +27,6 @@ export const Hero = () => {
               >
                 Donate
               </a>
-              <a
-                href="https://github.com/web3templates/nextly-template/"
-                target="_blank"
-                rel="noopener"
-                className="flex items-center space-x-2 text-gray-500 dark:text-gray-400"
-              >
-                {/* SVG placeholder for future */}
-              </a>
             </div>
           </div>
         </div>

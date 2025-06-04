@@ -45,9 +45,11 @@ const ContactForm = () => {
         We&apos;re always looking for animals to help
       </SectionTitle>
       <div className="max-w-lg mx-auto bg-white p-8 shadow-lg rounded-lg mt-10">
+        {/* TODO: Hook up a real form vendorand change this message */}
         {isSubmitted ? (
-          <h2 className="text-2xl font-semibold text-center text-green-600">
+          <h2 className="text-2xl font-semibold text-center text-white bg-green-600 p-4 rounded-lg">
             Thank you for your message! We&apos;ll get back to you soon.
+            {/* The developer stopped paying the form vendor. Try sending an email to <a className="text-blue-600" href="mailto:wolf@wildheart.foundation">wolf@wildheart.foundation</a>. */}
           </h2>
         ) : (
           <form
@@ -58,7 +60,8 @@ const ContactForm = () => {
             className="space-y-6"
           >
             {/* Hidden input for Netlify */}
-            <input type="hidden" name="form-name" value="contact" />
+            {/* We're hosting on Vercel, so we need something else to handle form submissions */}
+            {/* <input type="hidden" name="form-name" value="contact" /> */}
 
             <div>
               <label

@@ -2,9 +2,12 @@ import {
   FaceSmileIcon,
   ChartBarSquareIcon,
   CursorArrowRaysIcon,
-  DevicePhoneMobileIcon,
-  AdjustmentsHorizontalIcon,
-  SunIcon,
+  BeakerIcon,
+  TruckIcon,
+  BuildingStorefrontIcon,
+  HomeIcon,
+  WrenchScrewdriverIcon,
+  BuildingOffice2Icon,
 } from "@heroicons/react/24/solid";
 
 import benefitOneImg from "../../public/img/benefit-one.png";
@@ -44,17 +47,17 @@ const benefitTwo = {
     {
       title: "Supplements and specialty nutrition",
       desc: "WildHeart has provided veterinary zoo grade food to wildlife rescue facilities around the world that were struggling to afford healthy diets",
-      icon: <DevicePhoneMobileIcon />,
+      icon: <BeakerIcon />,
     },
     {
       title: "Emergency food assistance",
-      desc: "When sancturies in the path of hurricanes have lost power to their freezers, we've stepped in with refridgerated trucks and new food resources",
-      icon: <AdjustmentsHorizontalIcon />,
+      desc: "When sanctuaries in the path of hurricanes have lost power to their freezers, we've stepped in with refrigerated trucks and new food resources",
+      icon: <TruckIcon />,
     },
     {
       title: "Food donation resources",
       desc: "We have worked with local grocery markets to connect them with sanctuaries and deliver unused food that would otherwise be thrown out",
-      icon: <SunIcon />,
+      icon: <BuildingStorefrontIcon />,
     },
   ],
 };
@@ -67,17 +70,17 @@ const benefitThree = {
     {
       title: "Platforms, hammocks, and furniture",
       desc: "WildHeart has built sturdy platforms and hammocks for big cats, wolves, and primates so they have more usable space",
-      icon: <DevicePhoneMobileIcon />,
+      icon: <HomeIcon />,
     },
     {
       title: "Improvements and renovations",
       desc: "Small sanctuaries with a miniscule budget have received upgrades to make habitats safer and more comfortable for the animals",
-      icon: <AdjustmentsHorizontalIcon />,
+      icon: <WrenchScrewdriverIcon />,
     },
     {
       title: "New and larger enclosures",
       desc: "WildHeart has built new enclosures for rescued tigers in Thailand, and completed the largest captive wolf habitat in North America",
-      icon: <SunIcon />,
+      icon: <BuildingOffice2Icon />,
     },
   ],
 };
