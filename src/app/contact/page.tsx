@@ -1,5 +1,6 @@
 // components/ContactForm.tsx
 "use client";
+import { useForm, ValidationError } from "@formspree/react";
 
 import { SectionTitle } from "@/components/SectionTitle";
 import { useState } from "react";
@@ -11,6 +12,7 @@ const ContactForm = () => {
     message: "",
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [state, handleSubmit] = useForm("mdkzkodn");
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -21,23 +23,34 @@ const ContactForm = () => {
     });
   };
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  // Manual handleSubmit, just in case we need to revert to it and not use Formspree
+  // const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  //   e.preventDefault();
 
-    const form = e.target as HTMLFormElement;
-    const formData = new FormData(form);
+  //   const form = e.target as HTMLFormElement;
+  //   const formData = new FormData(form);
 
-    try {
-      await fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData as any).toString(),
-      });
-      setIsSubmitted(true);
-    } catch (error) {
-      console.error("Form submission error: ", error);
-    }
-  };
+  //   try {
+  //     await fetch("/", {
+  //       method: "POST",
+  //       headers: { "Content-Type": "application/x-www-form-urlencoded" },
+  //       body: new URLSearchParams(formData as any).toString(),
+  //     });
+  //     setIsSubmitted(true);
+  //   } catch (error) {
+  //     console.error("Form submission error: ", error);
+  //   }
+  // };
+  
+  if (state.succeeded) {
+    return (
+      <div className="max-w-lg mx-auto bg-white p-8 rounded-lg mt-10">
+        <h2 className="text-2xl font-semibold text-center text-white bg-green-600 p-4 rounded-lg">
+          Thank you for your message! We&apos;ll get back to you soon.
+        </h2>
+      </div>
+    );
+  }
 
   return (
     <>
@@ -45,18 +58,9 @@ const ContactForm = () => {
         We&apos;re always looking for animals to help
       </SectionTitle>
       <div className="max-w-lg mx-auto bg-white p-8 shadow-lg rounded-lg mt-10">
-        {/* TODO: Hook up a real form vendorand change this message */}
-        {isSubmitted ? (
-          <h2 className="text-2xl font-semibold text-center text-white bg-green-600 p-4 rounded-lg">
-            Thank you for your message! We&apos;ll get back to you soon.
-            {/* The developer stopped paying the form vendor. Try sending an email to <a className="text-blue-600" href="mailto:wolf@wildheart.foundation">wolf@wildheart.foundation</a>. */}
-          </h2>
-        ) : (
           <form
             onSubmit={handleSubmit}
             name="contact"
-            method="POST"
-            data-netlify="true"
             className="space-y-6"
           >
             {/* Hidden input for Netlify */}
@@ -79,6 +83,11 @@ const ContactForm = () => {
                 required
                 className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm bg-inherit text-gray-900"
               />
+              <ValidationError 
+                prefix="Name" 
+                field="name"
+                errors={state.errors}
+              />
             </div>
 
             <div>
@@ -96,6 +105,11 @@ const ContactForm = () => {
                 onChange={handleChange}
                 required
                 className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm bg-inherit text-gray-900"
+              />
+              <ValidationError 
+                prefix="Email" 
+                field="email"
+                errors={state.errors}
               />
             </div>
 
@@ -115,6 +129,11 @@ const ContactForm = () => {
                 className="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm bg-inherit text-gray-900"
                 rows={4}
               />
+              <ValidationError 
+                prefix="Message" 
+                field="message"
+                errors={state.errors}
+              />
             </div>
 
             <button
@@ -124,7 +143,6 @@ const ContactForm = () => {
               Send Message
             </button>
           </form>
-        )}
       </div>
     </>
   );
