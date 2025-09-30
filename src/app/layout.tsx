@@ -12,6 +12,11 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "WildHeart Foundation",
   description: "Helping wild animals living in zoos and sanctuaries",
+  icons: {
+    icon: '/img/favicon.png',
+    shortcut: '/img/favicon.png',
+    apple: '/img/favicon.png',
+  },
 };
 
 export default function RootLayout({

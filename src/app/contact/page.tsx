@@ -12,6 +12,7 @@ const ContactForm = () => {
     message: "",
   });
   const [isSubmitted, setIsSubmitted] = useState(false);
+  // TODO: Change this to use an environment variable for the form ID
   const [state, handleSubmit] = useForm("mdkzkodn");
 
   const handleChange = (
@@ -41,7 +42,7 @@ const ContactForm = () => {
   //     console.error("Form submission error: ", error);
   //   }
   // };
-  
+
   if (state.succeeded) {
     return (
       <div className="max-w-lg mx-auto bg-white p-8 rounded-lg mt-10">
