@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import { Container } from "@/components/Container";
 import tigerHero2 from "../../../public/img/tigerHero2.jpg"
-import missionWolfFence from "../../../public/img/gallery/jess-building-fence.jpg"
 import bolero21 from "../../../public/img/gallery/bolero 021.jpg"
 import thailandVolunteers from "../../../public/img/gallery/thailand-volunteers.jpg"
 import tigerBoomerBall from "../../../public/img/gallery/tiger-boomer-ball-2.jpg"
