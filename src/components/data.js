@@ -10,8 +10,6 @@ import {
   BuildingOffice2Icon,
 } from "@heroicons/react/24/solid";
 
-import benefitOneImg from "../../public/img/benefit-one.png";
-import benefitTwoImg from "../../public/img/benefit-two.png";
 import rhinoToyBenefit from "../../public/img/rhinoToyBenefit.jpg";
 import Benefit1Zeb from "../../public/img/Benefit1Zeb.jpg";
 import tigerBenefit3 from "../../public/img/tigerBenefit3.jpg";
