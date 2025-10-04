@@ -10,17 +10,17 @@ export const Cta = () => {
             Help us help wildlife
           </h2>
           <p className="mt-2 lg:pr-24 font-medium text-white text-opacity-90 lg:text-lg xs:text-xs">
-            WildHeart is a small grassroots organization led by volunteers. We depend entirely on donations to operate.
+            WildHeart is a small grassroots organization led by volunteers. We have put donations on hold while we work on bringing a new project to life.
           </p>
         </div>
         <div className="flex-shrink-0 w-full text-center lg:w-auto">
           <a
-            href="donate"
+            href="contact"
             target="_blank"
             rel="noopener"
             className="inline-block py-3 mx-auto text-lg font-medium text-center text-indigo-600 bg-white rounded-md px-7 lg:px-10 lg:py-5 "
           >
-            Donate
+            Stay tuned for updates
           </a>
         </div>
       </div>

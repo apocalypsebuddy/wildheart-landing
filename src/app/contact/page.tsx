@@ -56,7 +56,7 @@ const ContactForm = () => {
   return (
     <>
       <SectionTitle preTitle="Contact Us">
-        We&apos;re always looking for animals to help
+        WildHeart is working on bringing a new project to life. Send us a message and we&apos;ll contact you with updates.
       </SectionTitle>
       <div className="max-w-lg mx-auto bg-white p-8 shadow-lg rounded-lg mt-10">
           <form

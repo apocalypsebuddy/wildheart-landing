@@ -3,7 +3,7 @@ import { Hero } from "@/components/Hero";
 import { SectionTitle } from "@/components/SectionTitle";
 import { Benefits } from "@/components/Benefits";
 // import { Video } from "@/components/Video";
-import { Testimonials } from "@/components/Testimonials";
+// import { Testimonials } from "@/components/Testimonials";
 import { Faq } from "@/components/Faq";
 import { Cta } from "@/components/Cta";
 
@@ -38,13 +38,13 @@ export default function Home() {
       {/* TODO: Upload video to youtube and put video here */}
       {/* <Video videoId="fZ0D0cnR88E" /> */}
 
-      <SectionTitle
+      {/* <SectionTitle
         preTitle="Animal Voices"
         title="Testimonials"
       >
       </SectionTitle>
 
-      <Testimonials />
+      <Testimonials /> */}
 
       <SectionTitle preTitle="FAQ" />
 
